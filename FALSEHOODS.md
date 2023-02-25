@@ -274,3 +274,42 @@ surprising how many false assumptions programmers continue to make about them.
     in the event of an alarm activation then automated voice messages can be
     played on the device via telephony APIs, or a human may call the device
     directly (potentially also via a telephony API).
+
+1. **The division between area code and local number is consistent**
+
+    An area code can be a prefix of another area code; for example, until 1989
+    **+64-9-** denoted the Auckland Metro area, while
+    **+64-942-** denoted the neighbouring (much smaller) Rodney County.
+    (But there weren't any local numbers in the Auckland Metro area that started with **42**.)
+    
+1. **Within an area code, all local numbers are the same length**
+
+    Proof by counterexample:
+    in the 1980's, Auckland metro had valid local numbers between 5 & 7 digits
+
+1. **OK, they don't all have to be the same length, but dialing variable length numbers require timeouts**
+
+    Except in the minority of cases where a valid number can be a prefix of
+    another valid number, its a simple matter to examine the first few digits
+    to decide how many digits in total are required.
+
+    Around 1982, these were the patterns for valid numbers in the Auckland
+    metro area:
+    * +64-9-2xxxxxx
+    * +64-9-30xxx
+    * +64-9-389xxx
+    * +64-9-40xxxxx
+    * +64-9-41xxxxx
+    * +64-942-xxxxx
+    * +64-9-43xxxx
+    * +64-9-44xxxxx
+    * +64-9-45xxxx
+    * +64-9-46xxxx
+    * +64-9-70xxx
+    * +64-9-73xxxx
+    * +64-9-81xxxxx
+    * +64-9-83xxxxx
+    * +64-9-86xxxx
+    * +64-9-87xxxx
+    * +64-9-88xxxx
+    * +64-9-89xxxx
